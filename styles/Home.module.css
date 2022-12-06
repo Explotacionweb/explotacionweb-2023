@@ -1,0 +1,33 @@
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  /* min-height: calc(100vh - 117px); */
+  padding: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main_banner {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 2em 0 5em 0;
+  width:100%;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding:0 2em;
+  text-align: left;
+  max-width:670px;
+}
+.content button{
+  margin-top: 1em;
+}
