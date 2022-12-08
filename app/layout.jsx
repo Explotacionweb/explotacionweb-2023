@@ -16,6 +16,7 @@ const HelveticaNeue = localFont({
   ],})
 const Monoid = localFont({
   src: [
+    // Falta la fuente Light, pedirla a The Mood Project
     {
       path: '../public/fonts/Monoid-Regular.ttf',
       weight: '400',
