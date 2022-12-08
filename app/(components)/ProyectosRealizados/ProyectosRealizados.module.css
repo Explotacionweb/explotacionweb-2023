@@ -1,47 +1,53 @@
-
-.proyectos_realizados{
+.proyectos_realizados {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   margin: 0;
-  padding: 2rem;
+  padding: 2rem 0;
   background-color: var(--main-orange);
 }
-.proyectos_realizados_content{
+.proyectos_realizados_content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-.proyectos_realizados_title{
-  text-align: left !important;
-  width: 50%;
-  max-width: 400px;
-}
-.proyectos_realizados_list{
+.proyectos_realizados_list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  width: 50%;
   margin: 0;
   padding: 0;
 }
-.proyectos_realizados_item{
+.proyectos_realizados_item {
   position: relative;
-  width: 120px;
-  height: 90px;;
+  width: 125px;
+  height: 60px;
 }
-.proyectos_realizados_item img{
+.proyectos_realizados_item img {
   object-fit: contain;
 }
-.img_black{
+.img_black {
   filter: brightness(0);
 }
-.img_grayscale{
+.img_grayscale {
   filter: grayscale(1) brightness(0.6);
+}
+@media screen and (min-width: 968px) {
+  .proyectos_realizados_content {
+    flex-direction: row;
+  }
+  .proyectos_realizados_title {
+    text-align: left !important;
+    width: 50%;
+    max-width: 400px;
+  }
+  .proyectos_realizados_list {
+    width: 50%;
+  }
 }

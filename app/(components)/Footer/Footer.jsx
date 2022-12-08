@@ -1,11 +1,13 @@
 import Link from "next/link";
 import styles from "./Footer.module.css";
-export default function Footer () {
+export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
         <p className="section-title">¿Colaboramos?</p>
-        <button className="cta-button">Contáctanos</button>
+        <Link href="/contacto" className={`cta-button`}>
+          Contáctanos
+        </Link>
         <div className={styles.footer_links}>
           <div className={styles.footer_links_row}>
             <a href="tel:+34640715801">640 715 801</a>
@@ -21,13 +23,21 @@ export default function Footer () {
               </a>
             </div> */}
           </div>
-          <a href="mailto:soporte@explotacionweb.es">soporte@explotacionweb.es</a>
+          <a href="mailto:soporte@explotacionweb.es">
+            soporte@explotacionweb.es
+          </a>
         </div>
         <div className={styles.footer_legal}>
           <ul className={styles.footer_legal_links}>
-            <li><Link href="/aviso-legal">Aviso legal</Link></li>
-            <li><Link href="/politica-privacidad">Política de privacidad</Link></li>
-            <li><Link href="/politica-cookies">Política de cookies</Link></li>  
+            <li>
+              <Link href="/aviso-legal">Aviso legal</Link>
+            </li>
+            <li>
+              <Link href="/politica-privacidad">Política de privacidad</Link>
+            </li>
+            <li>
+              <Link href="/politica-cookies">Política de cookies</Link>
+            </li>
           </ul>
           <p>Copyright 2022 Explotación Web Powered by The Mood Project</p>
         </div>
@@ -35,4 +45,3 @@ export default function Footer () {
     </footer>
   );
 }
-
